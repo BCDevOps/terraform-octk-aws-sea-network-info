@@ -1,4 +1,4 @@
-output "vpc" {
+output "aws_vpc" {
   value = data.aws_vpc.main
 }
 
