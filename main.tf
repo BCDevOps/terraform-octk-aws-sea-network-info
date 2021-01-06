@@ -21,6 +21,7 @@ locals {
   web_subnet_names   = [for az in local.availability_zones : "Web_${local.environment}_az${az}_net"]
   app_subnet_names   = [for az in local.availability_zones : "App_${local.environment}_az${az}_net"]
   data_subnet_names  = [for az in local.availability_zones : "Data_${local.environment}_az${az}_net"]
+  mgmt_subnet_names  = [for az in local.availability_zones : "Mgmt_${local.environment}_az${az}_net"]
 }
 
 data "aws_vpc" "main" {
@@ -54,6 +55,14 @@ data "aws_subnet_ids" "data" {
   }
 }
 
+data "aws_subnet_ids" "mgmt" {
+  vpc_id = data.aws_vpc.main.id
+  filter {
+    name   = "tag:Name"
+    values = local.mgmt_subnet_names
+  }
+}
+
 data "aws_subnet" "web" {
   for_each = data.aws_subnet_ids.web.ids
   id       = each.value
@@ -65,6 +74,11 @@ data "aws_subnet" "app" {
 }
 
 data "aws_subnet" "data" {
-  for_each = data.aws_subnet_ids.app.ids
+  for_each = data.aws_subnet_ids.data.ids
+  id       = each.value
+}
+
+data "aws_subnet" "mgmt" {
+  for_each = data.aws_subnet_ids.mgmt.ids
   id       = each.value
 }
