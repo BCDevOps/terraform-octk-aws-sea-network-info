@@ -11,6 +11,7 @@ locals {
   env_map = {
     dev     = "Dev"
     test    = "Test"
+    prod    = "Prod"
     sandbox = "Sandbox"
     unclass = "UnClass"
   }
