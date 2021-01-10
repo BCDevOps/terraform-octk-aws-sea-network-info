@@ -1,16 +1,11 @@
 
-# <application_license_badge>
-<!--- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) --->
+# terraform-octk-aws-sea-network-info
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 
-# BC Gov Terraform Template
-
-This repo provides a starting point for users who want to create valid Terraform modules stored in GitHub.  
-
-## Third-Party Products/Libraries used and the licenses they are covered by
-<!--- product/library and path to the LICENSE --->
-<!--- Example: <library_name> - [![GitHub](<shield_icon_link>)](<path_to_library_LICENSE>) --->
+This terraform module is a utility for the BCGOV AWS SEA LZ2 network. VPC and Subnet info are output for use in other terraform code.
 
 ## Project Status
+
 - [x] Development
 - [ ] Production/Maintenance
 
