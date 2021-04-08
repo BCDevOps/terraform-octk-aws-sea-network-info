@@ -65,6 +65,6 @@ data "aws_subnet" "app" {
 }
 
 data "aws_subnet" "data" {
-  for_each = data.aws_subnet_ids.app.ids
+  for_each = data.aws_subnet_ids.data.ids
   id       = each.value
 }
