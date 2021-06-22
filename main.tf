@@ -17,7 +17,7 @@ locals {
 	}
 	environment = local.env_map[lower(var.environment)]
 	vpc_name = "${local.environment}_vpc"
-	availability_zones = list("a", "b")
+	availability_zones = ["a", "b"]
 	web_subnet_names = [for az in local.availability_zones : "Web_${local.environment}_az${az}_net"]
 	app_subnet_names = [for az in local.availability_zones : "App_${local.environment}_az${az}_net"]
 	data_subnet_names = [for az in local.availability_zones : "Data_${local.environment}_az${az}_net"]
