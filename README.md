@@ -1,7 +1,7 @@
 # Terraform-octk-aws-sea-network-info
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 
-This terraform module is a utility for the BCGOV AWS SEA LZ2 network. VPC and Subnet info are output for use in other terraform code.
+This terraform module is a utility for the BCGOV AWS SEA LZ2 network. VPC and Subnet info are output for use in other terraform code. Its gets the data(VPC, security groups, and subnets) from the  AWS accounts, listed in main.tf file, such that the outputs of those values are used in other modules.
 
 ## Project Status
 
