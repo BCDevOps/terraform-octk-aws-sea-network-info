@@ -13,15 +13,6 @@ jobs:
       uses: terraform-docs/gh-actions@main
       with:
         working-dir: .
-        template: |-
-            <!-- BEGIN_TF_DOCS -->
-            # Test tf11 basic
-            ## Verify
-            Should use the template defined instead of the default
-            Should inject the table under usage
-            # Usage
-            {{ .Content }}
-            <!-- END_TF_DOCS -->
         output-file: README.md
         output-method: inject
         git-push: "true"
