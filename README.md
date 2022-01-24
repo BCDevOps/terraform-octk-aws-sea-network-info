@@ -60,7 +60,6 @@ No modules.
 | <a name="output_aws_vpc"></a> [aws\_vpc](#output\_aws\_vpc) | n/a |
 
 
-
 ## How to Contribute
 <!--- Example below, modify accordingly --->
 If you would like to contribute, please see our [CONTRIBUTING](./CONTRIBUTING.md) guidelines.
