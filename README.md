@@ -1,4 +1,3 @@
-<!-- BEGIN_TF_DOCS -->
 # Terraform-octk-aws-sea-network-info
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 
@@ -12,6 +11,7 @@ This terraform module is a utility for the BCGOV AWS SEA LZ2 network. VPC and Su
 ## Getting Help or Reporting an Issue
 <!--- Example below, modify accordingly --->
 To report bugs/issues/feature requests, please file an [issue](../../issues).
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -57,6 +57,7 @@ No modules.
 | <a name="output_aws_subnet"></a> [aws\_subnet](#output\_aws\_subnet) | n/a |
 | <a name="output_aws_subnet_ids"></a> [aws\_subnet\_ids](#output\_aws\_subnet\_ids) | n/a |
 | <a name="output_aws_vpc"></a> [aws\_vpc](#output\_aws\_vpc) | n/a |
+<!-- END_TF_DOCS -->
 
 ## How to Contribute
 <!--- Example below, modify accordingly --->
@@ -81,4 +82,3 @@ By participating in this project you agree to abide by its terms.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-<!-- END_TF_DOCS -->
