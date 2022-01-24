@@ -12,7 +12,6 @@ This terraform module is a utility for the BCGOV AWS SEA LZ2 network. VPC and Su
 ## Getting Help or Reporting an Issue
 <!--- Example below, modify accordingly --->
 To report bugs/issues/feature requests, please file an [issue](../../issues).
-
 ## Requirements
 
 | Name | Version |
@@ -58,7 +57,6 @@ No modules.
 | <a name="output_aws_subnet"></a> [aws\_subnet](#output\_aws\_subnet) | n/a |
 | <a name="output_aws_subnet_ids"></a> [aws\_subnet\_ids](#output\_aws\_subnet\_ids) | n/a |
 | <a name="output_aws_vpc"></a> [aws\_vpc](#output\_aws\_vpc) | n/a |
-
 
 ## How to Contribute
 <!--- Example below, modify accordingly --->
