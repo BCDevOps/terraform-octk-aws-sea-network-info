@@ -1,12 +1,3 @@
-terraform {
-	required_providers {
-		aws = {
-			source = "hashicorp/aws"
-			version = "~> 3.11"
-		}
-	}
-}
-
 locals {
 	env_map = {
 		dev = "Dev"
