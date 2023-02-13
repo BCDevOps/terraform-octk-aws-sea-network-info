@@ -19,9 +19,9 @@ output "aws_subnet" {
 }
 
 output "aws_security_groups" {
-	value = {
-		"web" = data.aws_security_group.web
-		"app" = data.aws_security_group.app
-		"data" = data.aws_security_group.data
-	}
+  value = {
+    "web"  = data.aws_security_group.web
+    "app"  = data.aws_security_group.app
+    "data" = data.aws_security_group.data
+  }
 }
