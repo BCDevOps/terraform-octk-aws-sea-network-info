@@ -4,9 +4,9 @@ output "aws_vpc" {
 
 output "aws_subnet_ids" {
   value = {
-    "web"  = data.aws_subnets.web.ids
-    "app"  = data.aws_subnets.app.ids
-    "data" = data.aws_subnets.data.ids
+    "web"  = { ids = data.aws_subnets.web.ids }
+    "app"  = { ids = data.aws_subnets.app.ids }
+    "data" = { ids = data.aws_subnets.data.ids }
   }
 }
 
